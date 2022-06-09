@@ -1,0 +1,20 @@
+<?php
+    session_start();
+    require('./includes/connection.php');
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+    if(isset($_POST['submit']))
+    {
+        $sql="SELECT * FROM users WHERE username='$username' AND password='$password'";
+        $result=mysqli_query($conn,$sql);
+        if(mysqli_num_rows($result)>0)
+        {
+            $_SESSION["user"]="login";
+            header("location:../dashboard.php");
+        }
+        else
+        {
+            header("location:../index.php");
+        }
+    }
+?>

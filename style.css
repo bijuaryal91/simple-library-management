@@ -1,0 +1,398 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Login Page */
+.container {
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px #9c9c9c;
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form {
+    margin: 20px 0px;
+}
+
+.container .input-field {
+    height: 40px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #9c9c9c;
+}
+
+.container .input-field:focus {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: rgba(128, 0, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(128, 0, 0);
+}
+
+.errorText {
+    color: red;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(136, 4, 4);
+    padding: 0px 0px 6px 0px;
+    z-index: 99;
+    transition: all 0.5s ease;
+    box-shadow: 5px 0px 10px #9c9c9c;
+}
+
+.sidebar .logo-details {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(100, 0, 0);
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar .logo-details .logo-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidebar ul {
+    font-size: 18px;
+}
+
+.sidebar ul li {
+    border-top: 1px solid #9c9c9c;
+    cursor: pointer;
+    line-height: 70px;
+    padding-left: 30px;
+}
+
+.sidebar ul li:last-child {
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.sidebar ul li:hover a {
+    transition: all 0.5s ease;
+    padding-left: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 5px;
+}
+
+/* dashboard */
+.card-header {
+    display: flex;
+    width: calc(100% - 20%);
+    position: absolute;
+    right: 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.card-header .card {
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    margin: 0px 10px;
+    line-height: 100px;
+    border-radius: 5px;
+}
+
+.card-header .card h2 {
+    line-height: 0;
+}
+
+.card-header .first {
+    background-color: rgb(0, 225, 255);
+}
+
+.card-header .second {
+    background-color: rgb(24, 231, 24);
+}
+
+.card-header .third {
+    background-color: rgb(255, 0, 76);
+}
+
+/* tables */
+.viewbook-container {
+    margin-left: 310px;
+    margin-top: -100px;
+}
+.table-data
+{
+    border: 2px solid #999;
+    min-height: 210px;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+input[type="search"] {
+    border: 2px solid #9c9c9c;
+    padding: 5px 10px;
+    display: inline-block;
+    padding-left: 2.5em;
+    transition: width 0.7s ease-in-out 0s;
+    width: 200px;
+    border-radius: 5px;
+}
+
+input[type="search"]:focus {
+    width: 100%;
+    outline: none;
+}
+
+label[for="search"] {
+    color: #999;
+    margin-left: 10px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+table td,
+table th {
+    border-top: 1px solid #eee;
+    display: table-cell;
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+}
+th
+{
+    width: 100px;
+}
+.add-container
+{
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px #9c9c9c;
+    padding: 20px;
+    width: 350px;
+    margin-left: 300px;
+}
+.add-container form
+{
+    text-align: center;
+}
+.add-container form input[type="text"]
+{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #9c9c9c;
+}
+.add-container form input[type="text"]:focus
+{
+    outline: none;
+}
+.add-container form input[type="submit"] {
+    background-color: rgba(128, 0, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.add-container form select
+{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #9c9c9c;
+    background-color: white;
+}
+.add-container form input[type="submit"]:hover {
+    background-color: rgb(128, 0, 0);
+}
+@media(max-width:1184px) {
+    .card-header {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .card-header .card {
+        margin: 10px 0px;
+    }
+}
+@media(max-width:1000px)
+{
+    table td,
+    table th
+    {
+        padding: 5px;
+    }
+    th
+    {
+        width: 80px;
+    }
+}
+@media(max-width:860px)
+{
+    table td,
+    table th
+    {
+        padding: 2px;
+    }
+    th
+    {
+        width: 20px;
+    }
+}
+@media(max-width:700px) {
+    .card-header {
+        flex-direction: column;
+    }
+
+    .card-header .card {
+        margin: 10px 0px;
+    }
+
+    .sidebar {
+        width: 15%
+    }
+
+    .sidebar .logo-name {
+        visibility: hidden;
+    }
+
+    .sidebar .logo-name::after {
+        content: "LMS";
+        visibility: visible;
+        display: block;
+        position: absolute;
+        padding: 15px 50px;
+        top: 2px;
+
+    }
+
+    .sidebar ul li a span {
+        display: none;
+    }
+
+    .sidebar ul li:hover a {
+        padding-left: 5px;
+    }
+
+    .card-header {
+        width: 80%;
+    }
+    .viewbook-container
+    {
+        margin-left: 80px;
+    }
+    .add-container
+    {
+        margin-left: 70px;
+    }
+}
+@media(max-width:480px)
+{
+    table th,table td
+    {
+        font-size: 14px;
+    }
+    .table-data
+    {
+        min-height: 100px;
+    }
+    .add-container
+    {
+        width: 250px;
+        margin-left: 50px;
+    }
+}
+@media (max-width:450px) {
+    .sidebar ul li {
+        padding: 0px 15px;
+    }
+    .viewbook-container
+    {
+        margin-left: 60px;
+    }
+
+}
+
+@media (max-width:410px) {
+   table td,table th
+   {
+      padding: 0;
+   }
+
+}
+
+@media (max-width:387px) {
+    .sidebar ul li:hover a {
+        padding-left: 0px;
+    }
+    table td,table th
+    {
+        font-size: 12px;
+    }
+}
